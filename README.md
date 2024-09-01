@@ -18,44 +18,50 @@ my-Portfolio-website/
 
 
 # Steps to Package and Deploy
-1. Prepare Your Static Website
-   Make sure your HTML, CSS, and JavaScript files are ready.
+1)
+Prepare Your Static Website
+Make sure your HTML, CSS, and JavaScript files are ready.
 
-2. Create a Dockerfile
-   In your project directory (my-static-website/), create a Dockerfile with the following content:
+2)
+Create a Dockerfile
+In your project directory (my-static-website/), create a Dockerfile with the following content:
 
-3. Build the Docker Image
-   Navigate to your project directory and build the Docker image:
+3)
+Build the Docker Image
+Navigate to your project directory and build the Docker image:
 
-   docker build -t my-static-website .
+docker build -t my-static-website .
 
-5. Run the Docker Container
-   Run the container, mapping port 80 in the container to port 8080 on your host:
+4)
+Run the Docker Container
+Run the container, mapping port 80 in the container to port 8080 on your host:
 
-   docker run -d -p 8080:80 --name my-static-website-container my-static-website
+docker run -d -p 8080:80 --name my-static-website-container my-static-website
 
-5. Access Your Website
-   Open your browser and go to http://localhost:8080 to view your website.
+5)
+Access Your Website
+Open your browser and go to http://localhost:8080 to view your website.
 
-6. Share Your Docker Image
-   To share your image, push it to Docker Hub:
+7)
+Share Your Docker Image
+To share your image, push it to Docker Hub:
 
 # Login to Docker Hub:
-  docker login
-  Tag your image:
-  docker tag my-static-website your-dockerhub-username/my-static-website
-  Push your image:
-  docker push your-dockerhub-username/my-static-website
+docker login
+Tag your image:
+docker tag my-static-website your-dockerhub-username/my-static-website
+Push your image:
+docker push your-dockerhub-username/my-static-website
 
 # Clean Up
-  To stop and remove the container:
+To stop and remove the container:
 
-  docker stop my-static-website-container
-  docker rm my-static-website-container
+docker stop my-static-website-container
+docker rm my-static-website-container
 
-  To remove the Docker image:
+To remove the Docker image:
 
-  docker rmi my-static-website
+docker rmi my-static-website
 
 # Conclusion
   You've successfully packaged your static website into a Docker container using Nginx, making deployment and sharing easy. This project provides a foundation for understanding Dockerized web applications.
