@@ -1,14 +1,14 @@
-#Portfolio Website Hosting with Nginx and Docker
+# Portfolio Website Hosting with Nginx and Docker
 Overview -
 
 This project packages a static website into a Docker container using Nginx. Docker makes it easy to share and deploy your website efficiently. By the end of this project, you'll have a portable container that serves your static site.
 
-Prerequisites -
+# Prerequisites -
 
 Docker installed on your system.
 Basic command line knowledge.
 
-Project Structure -
+# Project Structure -
 Ensure your website files are organized as follows:
 
 my-Portfolio-website/
@@ -17,7 +17,7 @@ my-Portfolio-website/
 └── script.js
 
 
-Steps to Package and Deploy
+# Steps to Package and Deploy
 1. Prepare Your Static Website
 Make sure your HTML, CSS, and JavaScript files are ready.
 
@@ -40,7 +40,7 @@ Open your browser and go to http://localhost:8080 to view your website.
 6. Share Your Docker Image
 To share your image, push it to Docker Hub:
 
-Login to Docker Hub:
+# Login to Docker Hub:
 
 docker login
 Tag your image:
@@ -48,7 +48,7 @@ docker tag my-static-website your-dockerhub-username/my-static-website
 Push your image:
 docker push your-dockerhub-username/my-static-website
 
-7. Clean Up
+# Clean Up
 To stop and remove the container:
 
 docker stop my-static-website-container
